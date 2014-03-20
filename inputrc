@@ -1,0 +1,5 @@
+# Readline init file
+
+# Fast word navigation
+"\eOc": forward-word
+"\eOd": backward-word
