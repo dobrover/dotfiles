@@ -12,11 +12,15 @@
 
 ! Light
 
-#define S_base03 #fdf6e3
+
+! #define S_base03 #fdf6e3
+#define S_base03 #deddd7
 #define S_base02 #eee8d5
 #define S_base01 #93a1a1
 #define S_base00 #839496
-#define S_base0 #657b83
+
+! #define S_base0 #657b83
+#define S_base0 #000000
 #define S_base1 #586e75
 #define S_base2 #073642
 #define S_base3 #002b36
@@ -28,60 +32,45 @@ URxvt*.depth: 32
 ! Size
 URxvt*.geometry: 90x30
 
-! The unfocused window becomes lighter on 5%
-URxvt*.fading: 5
-! Also some colors
-URxvt*.fadeColor: S_base03
-URxvt*.cursorColor: S_base1
-URxvt*.pointerColorBackground: S_base01
-URxvt*.pointerColorForeground: S_base1
+*background: S_base03
+*foreground: S_base0
+*fading: 5
+*fadeColor: S_base03
+*cursorColor: S_base1
+*pointerColorBackground: S_base01
+*pointerColorForeground: S_base1
+
+*color0: S_base02
+*color1: S_red
+*color2: S_green
+*color3: S_yellow
+*color4: S_blue
+*color5: S_magenta
+*color6: S_cyan
+*color7: S_base2
+*color8: S_base03
+*color9: S_orange
+*color10: S_base01
+*color11: S_base00
+*color12: S_base0
+*color13: S_violet
+*color14: S_base1
+*color15: S_base3
+
+
+
+
+
 
 ! Disable ctrl+shift eating thing
 URxvt*.iso14755: false
 URxvt*.iso14755_52: false
 
-! Bg and fg
-URxvt*.foreground: white
-URxvt*.background: black
-
-! Why the hell do we need this thing? I hate colors :(
-*color0:  #2E3436
-*color1:  #a40000
-*color2:  #4E9A06
-*color3:  #C4A000
-*color4:  #3465A4
-*color5:  #75507B
-*color6:  #ce5c00
-*color7:  #babdb9
-*color8:  #555753
-*color9:  #EF2929
-*color10: #8AE234
-*color11: #FCE94F
-*color12: #729FCF
-*color13: #AD7FA8
-*color14: #fcaf3e
-*color15: #EEEEEC
 
 
-! URxvt*.color0: S_base02
-! URxvt*.color1: S_red
-! URxvt*.color2: S_green
-! URxvt*.color3: S_yellow
-! URxvt*.color4: S_blue
-! URxvt*.color5: S_magenta
-! URxvt*.color6: S_cyan
-! URxvt*.color7: S_base2
-! URxvt*.color8: S_base03
-! URxvt*.color9: S_orange
-! URxvt*.color10: S_base01
-! URxvt*.color11: S_base00
-! URxvt*.color12: S_base0
-! URxvt*.color13: S_violet
-! URxvt*.color14: S_base1
-! URxvt*.color15: S_base3
 
 URxvt*.font: xft:DejaVu Sans Mono:size=12:antialias=true:hinting=true
-! decreases the spacing by one pixel, but can be adjusted as needed. 
+! decreases the spacing by one pixel, but can be adjusted as needed.
 URxvt*.letterSpace: -1
 
 URxvt*.transparent: false
@@ -102,7 +91,7 @@ URxvt*.url-select.underline: true
 
 URxvt*.keysym.M-u:           perl:url-select:select_next
 
-! Duplicate for both delete and insert so that I dont have to worry when using 
+! Duplicate for both delete and insert so that I dont have to worry when using
 ! a keyboard or a laptop.
 URxvt*.keysym.Control-Delete: perl:clipboard:copy
 URxvt*.keysym.Shift-Delete: perl:clipboard:paste
@@ -143,3 +132,4 @@ URxvt*.tabbed.bell-fg: 244
 URxvt*.tabbed.bell-bg: 17
 URxvt*.tabbed.title-fg: 28
 URxvt*.tabbed.title-bg: 16
+
